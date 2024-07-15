@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chess Game</title>
+    <link rel="icon" href="./images/logo-chess.png" type="image/icon type">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="customAlertBox" class="custom-alert">
+        <div class="custom-alert-content">
+            <span class="close">&times;</span>
+            <div class="alert-text">
+                <div id="alertMessage"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header" id="sidebar">
+            <div id="title">
+                <img src="./images/logo-chess.png" alt="Logo" id="logo">
+                <p id="name">My Chess Game</p><button id="close-btn">×</button>
+            </div>     
+            <button id="new-game-btn">New Game</button>
+            <div class="credits">
+                <h3>Done by: </h3><p>Sree Nihaar Chaturvedula</p>
+                <a href="https://www.linkedin.com/in/sree-nihaar-chaturvedula/" target="_blank"><img src="./images/linkedin.png" alt="Sree Nihaar Linkedin" id="image-linkedin" ></a>
+                <a href="https://github.com/SreeNihaar" target="_blank" ><img src="./images/github.png" alt="Sree Nihaar Github" id="image-github"></a>
+                
+            </div>
+        </div>
+        <div class="content">
+        <button id="open-btn">☰</button>
+        <div class="board">
+            <div class="row8">
+                <button class="board-button" id="a8">&#9820</button>
+                <button class="board-button" id="b8">&#9822</button>
+                <button class="board-button" id="c8">&#9821</button>
+                <button class="board-button" id="d8">&#9819</button>
+                <button class="board-button" id="e8">&#9818</button>
+                <button class="board-button" id="f8">&#9821</button>
+                <button class="board-button" id="g8">&#9822</button>
+                <button class="board-button" id="h8">&#9820</button>
+            </div>
+            <div class="row7">
+                <button class="board-button" id="a7">&#9823</button>
+                <button class="board-button" id="b7">&#9823</button>
+                <button class="board-button" id="c7">&#9823</button>
+                <button class="board-button" id="d7">&#9823</button>
+                <button class="board-button" id="e7">&#9823</button>
+                <button class="board-button" id="f7">&#9823</button>
+                <button class="board-button" id="g7">&#9823</button>
+                <button class="board-button" id="h7">&#9823</button>
+            </div>
+            <div class="row6">
+                <button class="board-button" id="a6"></button>
+                <button class="board-button" id="b6"></button>
+                <button class="board-button" id="c6"></button>
+                <button class="board-button" id="d6"></button>
+                <button class="board-button" id="e6"></button>
+                <button class="board-button" id="f6"></button>
+                <button class="board-button" id="g6"></button>
+                <button class="board-button" id="h6"></button>
+            </div>
+            <div class="row5">
+                <button class="board-button" id="a5"></button>
+                <button class="board-button" id="b5"></button>
+                <button class="board-button" id="c5"></button>
+                <button class="board-button" id="d5"></button>
+                <button class="board-button" id="e5"></button>
+                <button class="board-button" id="f5"></button>
+                <button class="board-button" id="g5"></button>
+                <button class="board-button" id="h5"></button>
+            </div>
+            <div class="row4">
+                <button class="board-button" id="a4"></button>
+                <button class="board-button" id="b4"></button>
+                <button class="board-button" id="c4"></button>
+                <button class="board-button" id="d4"></button>
+                <button class="board-button" id="e4"></button>
+                <button class="board-button" id="f4"></button>
+                <button class="board-button" id="g4"></button>
+                <button class="board-button" id="h4"></button>
+            </div>
+            <div class="row3">
+                <button class="board-button" id="a3"></button>
+                <button class="board-button" id="b3"></button>
+                <button class="board-button" id="c3"></button>
+                <button class="board-button" id="d3"></button>
+                <button class="board-button" id="e3"></button>
+                <button class="board-button" id="f3"></button>
+                <button class="board-button" id="g3"></button>
+                <button class="board-button" id="h3"></button>
+            </div>
+            <div class="row2">
+                <button class="board-button" id="a2">&#9817</button>
+                <button class="board-button" id="b2">&#9817</button>
+                <button class="board-button" id="c2">&#9817</button>
+                <button class="board-button" id="d2">&#9817</button>
+                <button class="board-button" id="e2">&#9817</button>
+                <button class="board-button" id="f2">&#9817</button>
+                <button class="board-button" id="g2">&#9817</button>
+                <button class="board-button" id="h2">&#9817</button>
+            </div>
+            <div class="row1">
+                <button class="board-button" id="a1">&#9814</button>
+                <button class="board-button" id="b1">&#9816</button>
+                <button class="board-button" id="c1">&#9815</button>
+                <button class="board-button" id="d1">&#9813</button>
+                <button class="board-button" id="e1">&#9812</button>
+                <button class="board-button" id="f1">&#9815</button>
+                <button class="board-button" id="g1">&#9816</button>
+                <button class="board-button" id="h1">&#9814</button>
+            </div>
+        </div>
+    </div>
+        <div class="text">
+            <h2 class="player-name">Player 2</h2>
+            <div class="white-pieces">
+                <div class="player2" id="white-pawn">♙</div><p id="white-pawn-num">0</p>
+                <div class="player2" id="white-knight">♘</div><p id="white-knight-num">0</p>
+                <div class="player2" id="white-rook">♖</div><p id="white-rook-num">0</p>
+                <div class="player2" id="white-bishop">♗</div><p id="white-bishop-num">0</p>
+                <div class="player2" id="white-queen">♕</div><p id="white-queen-num">0</p>
+            </div>
+            <div class="check hidden">
+                CHECK FOR PLAYER 1
+            </div>
+            <h2 class="player-name">Player 1</h2>
+            <div class="black-pieces">
+                <div class="player1" id="black-pawn">♟</div><p id="black-pawn-num">0</p>
+                <div class="player1"  id="black-knight">♞</div><p id="black-knight-num">0</p>
+                <div class="player1" id="black-rook">♜</div><p id="black-rook-num">0</p>
+                <div class="player1" id="black-bishop">♝</div><p id="black-bishop-num">0</p>
+                <div class="player1" id="black-queen">♛</div><p id="black-queen-num">0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
