@@ -1619,12 +1619,8 @@ function movePiece(start,end){
     
     let a = findKingPos("K");
     let b = findKingPos("k");
-    console.log(boardPieces);
-    console.log("White King: ",a,"Black King: ",b);
     let wKing = getIdFromBoardPosition(a);
     let bKing = getIdFromBoardPosition(b);
-    console.log("White King:",wKing);
-    console.log("Black King: ",bKing);
     whiteKingId = wKing;
     blackKingId = bKing;
     whiteMove = !whiteMove;
@@ -1852,8 +1848,6 @@ button.forEach((btn) => {
             // Getting elements of from piece position to position
             let fromPiece = document.querySelector("#" + fromPieceId);
             let toPiece = document.querySelector("#" + toPieceId);
-            // Printing the moves in the console
-            console.log("from",fromPieceId,"to",toPieceId);
             let start = getBoardPositionFromId(fromPieceId);
             let end = getBoardPositionFromId(toPieceId);
             // Changing the positions in the boardPieces
