@@ -1,65 +1,74 @@
-## My Chess Game: A Multiplayer Chess Experience
+# My Chess Game
 
 This repository holds the source code for "My Chess Game," a web-based multiplayer chess application using HTML, CSS, JavaScript and deployed on Github Pages . 
 
-### Features
+## Features
 * **Multiplayer Mode:** Play chess with a friend on the same device.
 * **Responsive Design:** Optimized for both desktop and mobile devices.
 * **Interactive UI:** Smooth and intuitive user interface for an enjoyable playing experience.
 
-### Technologies Used
+## Live Demo
+* Check out the deployed project: [My Chess Game](https://sreenihaar.github.io/My-Chess-Game/)
 
-* HTML, CSS, JavaScript
+## Technologies Used
 
-### Getting Started
+* HTML
+* CSS
+* JavaScript
 
-1. **Access the application:**  The deployed version of "My Chess Game" is available at [link to your deployed application].
+## Screenshots
+![image](https://github.com/user-attachments/assets/c9d37700-1ddc-4e9c-9f18-1bca5aa33fab)
 
-2. **(Optional) Clone the repository (for development):**
+![image](https://github.com/user-attachments/assets/d775bc63-cd9f-4a2a-a0fc-f02450afe247)
 
-If you'd like to contribute to the development of the game, you can clone this repository:
 
-```bash
-git clone https://github.com/your-username/my-chess-game.git
-```
+
+## Getting Started
+
+1. **Access the application:**  The deployed version of "My Chess Game" is available at [My Chess Game](https://sreenihaar.github.io/My-Chess-Game/).
+
+2. **Clone the repository (for development):**
+
+    * If you'd like to contribute to the development of the game, you can clone this repository:
+
+      ```bash
+      git clone https://github.com/your-username/my-chess-game.git
+      ```
+    * Navigate to the project directory:
+      ```bash
+      cd my-chess-game
+      ```
+    * Open index.html in your web browser to start the game.
 
 Follow the installation instructions below to set up a development environment.
 
-### Installation (For Developers)
+## Contributing
 
-1. Install dependencies:
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-```bash
-# Replace 'requirements.txt' with your actual dependency file name
-pip install -r requirements.txt
-```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-2. (Optional) Configure database connection (if applicable)
+## Roadmap
 
-3. Run the development server:
+Future enhancements planned for the project include:
 
-```bash
-# Replace 'manage.py' with your actual management script name
-python manage.py runserver
-```
+- Implementing additional chess variants (e.g., chess 960)
+- Enhancing the multiplayer experience with online play
+- Adding support for player profiles and game statistics
 
-### How to Play
+## Acknowledgements
+* Special thanks to [Chess.com](https://www.chess.com/) for inspiration and reference.
 
-1. Visit the deployed application at [link to your deployed application].
-2. Create an account (if user accounts are implemented).
-3. Find a friend to challenge or play against the AI (if implemented).
-4. Enjoy the game!
+## Contact
 
-### Contributing
+Sree Nihaar Chaturvedula - [sreenihaarchaturvedula04@gmail.com](mailto:sreenihaarchaturvedula04@gmail.com)
 
-We welcome contributions to this project! Please see the CONTRIBUTING.md file for details on how to submit a pull request.
+LinkedIn - [Sree Nihaar Chaturvedula](https://www.linkedin.com/in/sree-nihaar-chaturvedula)
 
-### License
+Github - [Sree Nihaar](https://github.com/SreeNihaar)
 
-This project is licensed under the (Specify your project's license). See the LICENSE file for details.
-
-**Note:**
-
-* Replace the bracketed information with details specific to your project. 
-* Make sure to include the link to your deployed application.
-* Add additional sections as needed, such as screenshots, known issues, and deployment instructions specific to your platform (if applicable).
+Project Link: [https://sreenihaar.github.io/My-Chess-Game/](https://sreenihaar.github.io/My-Chess-Game/)
