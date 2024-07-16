@@ -43,17 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener("click", function(e){
-    const target = e.target.closest(".promotion-choices"); // Or any other selector.
-  
-    if(target){
-      
-    }
-  });
 
 newGameBtn.addEventListener("click",()=>window.location.reload());
 
-// Fix the King Function
 
 let promoteId ='';
 
@@ -1412,10 +1404,6 @@ function kingSelected(e, selected, id) {
     }
 }
 
-// My code
-// Returns true if the given ele move from id for King is valid
-
-// Another code
 // Returns true if the given ele move from id for King is valid
 function isValidPosition(ele, selected) {
     // Helper functions to check board boundaries and piece presence
@@ -1808,7 +1796,7 @@ function promotionEventListener(e) {
 
 alertBox.addEventListener('click', promotionEventListener);
 
-//function to promotte the pawn
+//function to promote the pawn
 function promotePawn(pawnColor) {
     alert_Message_container.innerHTML = (pawnColor === "Black") ? promoteTextForBlack : promoteTextForWhite;
     alertBox.style.display = "block";
